@@ -5,7 +5,6 @@ import { useGetAllProductsQuery } from "./store/api/productsApi";
 const App = () => {
   const counter = useSelector((state) => state.counter.value);
   const dispatch = useDispatch();
-  useNav;
   const { data, isLoading, error, isError } = useGetAllProductsQuery();
   console.log(data?.products);
   return (
